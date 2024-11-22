@@ -1,0 +1,52 @@
+/* style2.css */
+
+/* Stilizimi i kartelave të produkteve */
+.product-card {
+    height: 100%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Stilizimi i imazheve të produkteve */
+.product-image {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Stilizimi i titujve të kartelave të produkteve */
+.card-title a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.25rem;
+}
+
+.card-title a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+/* Stilizimi i butonëve të "Add to Cart" */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+/* Stilizimi i njoftimeve të suksesit */
+.alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+.alert-success .btn-close {
+    filter: invert(60%);
+}

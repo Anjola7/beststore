@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Informacioni i Klientit</title>
+ <link rel="stylesheet" href="../static/css/style.css">
+ 
+</head>
+<body>
+    <div>
+        <h2>Informacioni i Klientit</h2><br>
+        <form th:action="@{/cart/checkout}" method="post">
+            <label for="customerName">Emri:</label><br>
+            <input type="text" id="customerName" name="customerName" required>
+            
+            <label for="customerEmail">Email:</label><br>
+            <input type="email" id="customerEmail" name="customerEmail" required>
+            
+            <label for="customerAddress">Adresa:</label><br>
+            <input type="text" id="customerAddress" name="customerAddress" required>
+            
+            <label for="customerPhone">Numri i Telefonit:</label><br>
+            <input type="text" id="customerPhone" name="customerPhone" required>
+            
+            <!-- Fusha e fshehtë për ID-të e produkteve në karrocë -->
+            <input type="hidden" name="productIds" th:value="${productIds}">
+            
+            <button type="submit">Dërgo Porosinë</button><br>
+        </form>
+    </div>
+</body>
+</html>

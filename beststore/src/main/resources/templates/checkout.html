@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Checkout</title>
+</head>
+<body>
+    <h1>Checkout</h1>
+    <form action="#" th:action="@{/checkout}" method="post">
+        <input type="hidden" name="productIds" th:value="${productIds}" />
+        <!-- Shfaqja e informacionit të porosisë -->
+        <p th:text="'Selected Products: ' + ${productIds}"></p>
+       
+    </form>
+</body>
+</html>

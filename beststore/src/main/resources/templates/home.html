@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Produktet e Klikuara</title>
+</head>
+<body>
+    <h1>Produktet që keni klikuar</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Emri</th>
+                <th>Çmimi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="product : ${clickedProducts}">
+                <td th:text="${product.id}"></td>
+                <td th:text="${product.name}"></td>
+                <td th:text="${product.price}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
